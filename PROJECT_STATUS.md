@@ -12,7 +12,8 @@ AI agents MUST read this file before taking any action.
 - spec-kit-plus repository initialized
 - CAPS library base structure created
 - CAPS playbook: agents-md-gen
-- CAPS playbook: kafka-k8s-setup (playbook created, ready for deployment)
+- CAPS playbook: kafka-k8s-setup (playbook created)
+- CAPS playbook: postgres-k8s-setup (deployed & validated)
 
 ---
 
@@ -22,7 +23,6 @@ AI agents MUST read this file before taking any action.
 ---
 
 ## Not Started
-- CAPS playbook: postgres-k8s-setup
 - CAPS playbook: fastapi-dapr-agent
 - CAPS playbook: nextjs-k8s-deploy
 - CAPS playbook: mcp-python-server
@@ -37,7 +37,9 @@ AI agents MUST read this file before taking any action.
 ---
 
 ## Agent Instructions
-Read PROJECT_STATUS.md and the repository structure.
-Based on this information, list the next concrete tasks.
-Do NOT rely on previous conversation context.
-Do NOT assume missing files exist.
+1. Read PROJECT_STATUS.md
+2. Inspect repository structure
+3. If a CAPS playbook exists, execute it
+4. If a CAPS playbook does not exist, create it
+5. Update PROJECT_STATUS.md after each completed milestone
+6. Do NOT rely on prior conversation context
